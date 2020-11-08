@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <!-- Webpage Title -->
+        <title>SeulKi Kim</title>
+
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+
+        <!--구글폰트-->
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Sunflower:wght@500&display=swap"
+              rel="stylesheet">
+
+
+        <style>
+
+            .btn-group {
+                position: absolute;
+                left: 800px;
+                top: 100px;
+            }
+
+
+            .title-font {
+                position: absolute;
+                left: 200px;
+                top: 10px;
+                white-space: nowrap;
+                text-align: center;
+
+            }
+
+            .main-shot {
+                position: absolute;
+                left: 250px;
+                top: 150px;
+                width: 300px;
+                height: 250px;
+            }
+
+            .main-comment {
+                position: absolute;
+                left: 600px;
+                top: 250px;
+                width: 450px;
+            }
+
+            .intro > .title1 {
+                position: absolute;
+                left: 250px;
+                top: 550px;
+            }
+
+            .intro > .comment1 {
+                position: absolute;
+                left: 500px;
+                top: 550px;
+            }
+
+            .intro > .region1 {
+                position: absolute;
+                left: 500px;
+                top: 580px;
+                color: darkgray;
+            }
+
+            .intro > .date1 {
+                position: absolute;
+                left: 860px;
+                top: 550px;
+                color: gray;
+            }
+
+            .edu > .title1 {
+                position: absolute;
+                left: 250px;
+                top: 900px;
+
+            }
+
+            .edu > .comment1 {
+                position: absolute;
+                left: 500px;
+                top: 900px;
+            }
+
+            .edu > .region1 {
+                position: absolute;
+                left: 500px;
+                top: 930px;
+                color: darkgray;
+                white-space: nowrap;
+            }
+
+            .edu > .date1 {
+                position: absolute;
+                left: 900px;
+                top: 900px;
+                color: gray;
+            }
+
+            .edu > .paper {
+                position: absolute;
+                left: 500px;
+                top: 950px;
+                color: slategray;
+            }
+
+            .edu > .comment2 {
+                position: absolute;
+                left: 500px;
+                top: 990px;
+            }
+
+            .edu > .region2 {
+                position: absolute;
+                left: 500px;
+                top: 1020px;
+                color: darkgray;
+            }
+
+            .edu > .date2 {
+                position: absolute;
+                left: 900px;
+                top: 990px;
+                color: gray;
+            }
+
+            .edu > .prize {
+                position: absolute;
+                left: 500px;
+                top: 1040px;
+                color: slategray;
+            }
+
+            .skill > .title1 {
+                position: absolute;
+                left: 250px;
+                top: 1100px;
+            }
+
+            .skill > .skills {
+                position: absolute;
+                left: 500px;
+                top: 1100px;
+            }
+
+
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <div class="wrap">
+
+            <div class="title-font">
+                <h1 style="color:black;font-size:50px;text-shadow:3px 3px 10px gray"> SeulKi Kim</h1>
+                <h5>내가 만드는 세상</h5>
+            </div>
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary" onclick="location.href='/'">Home</button>
+                <button type="button" class="btn btn-secondary" onclick="location.href='/get_about'">About</button>
+                <button type="button" class="btn btn-secondary" onclick="location.href='/get_work'">Work</button>
+            </div>
+
+            <img class="main-shot" src="/static/main.jpg"
+                 alt="main">
+
+            <div class="main-comment">
+                I'm an research engineer. I like to make and create and think.
+                Pursue and develop a challenging and passionate life every day.
+            </div>
+
+            <div class="blurblur">
+                <div class="intro">
+                    <h3 class="title1">Experience</h3>
+                    <h5 class="comment1">Research Engineer @CTO group</h5>
+                    <h6 class="region1">LG Display</h6>
+                    <h7 class="date1">July 2015 - May 2020</h7>
+
+                </div>
+
+                <div class="edu">
+                    <h3 class="title1">Education</h3>
+                    <h5 class="comment1">Master of Science in Information Display</h5>
+                    <h6 class="region1">Graduate School of KyungHee University</h6>
+                    <h7 class="date1">Feb 2015 - Mar 2013</h7>
+                    <h9 class="paper">Thesis : Image Quality Enhancement and Evaluation for Low Power Adaptive Dimming
+                        LCDs
+                    </h9>
+
+                    <h5 class="comment2">B.S in Information Display</h5>
+                    <h6 class="region2">KyungHee University</h6>
+                    <h7 class="date2">Feb 2013 - Mar 2009</h7>
+                    <h9 class="prize">Cum laude</h9>
+
+
+                </div>
+
+                <div class="skill">
+                    <h3 class="title1">Skills and Tools</h3>
+                    <h6 class="skills">Html,CSS,Javascript,C,Python,Verilog,Spice,Matlab</h6>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
