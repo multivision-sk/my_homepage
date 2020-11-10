@@ -26,43 +26,48 @@
         <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Sunflower:wght@500&display=swap"
               rel="stylesheet">
 
-         <meta name="viewport" content="width=640, user-scalable=yes">
+        <meta name="viewport" content="width=640, user-scalable=yes">
 
         <style>
 
-            @media (max-width: 600px) {
-                .wrap {
-                    font-size: 20px;
-                }
+            .wrap {
+                min-width: 1024px;
             }
+
+            .header{
+                overflow: scroll;
+            }
+
 
 
             .btn-group {
-                position: absolute;
-                left: 800px;
-                top: 100px;
+                float: right;
+                margin-right: 100px;
+                margin-top: 100px;
+
             }
 
-
             .home-img {
-
-                position: absolute;
-                left: 200px;
-                top: 200px;
-                width: 850px;
-                height: 500px;
-
+                float: left;
+                margin-top: 50px;
+                margin-left: 150px;
+                width: 1000px;
+                height: 700px;
             }
 
 
             .title-font {
-                position: absolute;
-                left: 200px;
-                top: 10px;
                 text-align: center;
                 white-space: nowrap;
+                float: left;
+                margin-left: 200px;
+                margin-top: 20px;
+            }
 
 
+
+            body {
+                background-image: url("./back2.jpg");
             }
 
 
@@ -93,27 +98,29 @@
     </head>
     <body>
         <div class="wrap">
+            <div class="header">
 
-            <div class="title-font">
-                <h1 style="color:black;font-size:50px;text-shadow:3px 3px 10px gray"> SeulKi Kim </h1>
-                <h5>내가 만드는 세상</h5>
-            </div>
+                <div class="title-font">
+                    <h1 style="color:black;font-size:50px;text-shadow:3px 3px 10px gray"> SeulKi Kim </h1>
+                    <h5>내가 만드는 세상</h5>
+                </div>
 
 
-            <!--        <div class="btn-group" role="group" aria-label="Basic example">-->
-            <!--            <button type="button" class="btn btn-secondary" onclick="location.href='/'">Home</button>-->
-            <!--            <button type="button" class="btn btn-secondary" onclick="location.href='/get_about'">About</button>-->
-            <!--            <button type="button" class="btn btn-secondary" onclick="location.href='/get_work'">Work</button>-->
-            <!--        </div>-->
+                <!--        <div class="btn-group" role="group" aria-label="Basic example">-->
+                <!--            <button type="button" class="btn btn-secondary" onclick="location.href='/'">Home</button>-->
+                <!--            <button type="button" class="btn btn-secondary" onclick="location.href='/get_about'">About</button>-->
+                <!--            <button type="button" class="btn btn-secondary" onclick="location.href='/get_work'">Work</button>-->
+                <!--        </div>-->
 
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary" onclick="page_href1()">Home</button>
-                <button type="button" class="btn btn-secondary" onclick="page_href2()">About</button>
-                <button type="button" class="btn btn-secondary" onclick="page_href3()">Work</button>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" onclick="page_href1()">Home</button>
+                    <button type="button" class="btn btn-secondary" onclick="page_href2()">About</button>
+                    <button type="button" class="btn btn-secondary" onclick="page_href3()">Work</button>
+                </div>
             </div>
 
             <img class="home-img"
-                 src="./2.jpg">
+                 src="./notebook.jpg">
 
         </div>
     </body>
